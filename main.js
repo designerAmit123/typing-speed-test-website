@@ -63,9 +63,9 @@ btn.addEventListener('click', function(){
     typedWords.disabled = false;
     playGame();
   }else if(this.innerText == "Done") {
-    typedWords.value = "";
     typedWords.disabled = true;
     btn.innerText = "Start";
     endPlay();
+    typedWords.value = "";
   }
 });
